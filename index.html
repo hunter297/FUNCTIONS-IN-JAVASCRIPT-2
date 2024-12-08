@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="display()">click me!</button>
+    <h1 id="heading"></h1>
+    <p id="sum"></p>
+    <h3 id="mul"></h3>
+    <button onclick="sum()"> sum</button>
+
+    <button onclick="mul()">mul</button>
+
+    <script>
+        function display(){
+            document.getElementById("heading").innerHTML = "HEADING";
+           document.getElementById("heading").innerHTML = "THIS IS JAVASCRIPT";
+        }
+        function sum(){
+            var a = 500
+            var b = 400
+            document.getElementById("sum").innerHTML = a + b;
+        }
+        function mul(){
+            var x  = 500
+            var y  = 400
+            document.getElementById("mul").innerHTML = x * y
+        }
+   </script>
+</body>
+</html>
